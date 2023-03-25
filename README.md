@@ -2,8 +2,7 @@
 
 ### Code Credits
 
-* [Stanley Louis](https://codepen.io/stanlouis/pen/QNrmZv) - CodePen Home
-Bootstrap Navigation bar.
+* [Albi](https://codepen.io/albizan/pen/mMWdWZ) - Responsive Fixed Animated NavBar.
 * [Tech With Tim](https://www.youtube.com/watch?v=dam0GPOAvVI) - Flask, Authentication & Databases.
 
 - - -
