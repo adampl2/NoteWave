@@ -1,19 +1,17 @@
-from flask import render_template, request, redirect, url_for, flash, Blueprint
+from flask import render_template, request, redirect, url_for, flash
 from sweatsmart import app, db
 
-auth = Blueprint('auth', __name__)
 
-
-@auth.route('/login')
+@app.route('/login')
 def login():
     return "<p>login<p>"
 
 
-@auth.route('/logout')
+@app.route('/logout')
 def logout():
     return "<p>logout<p>"
 
 
-@auth.route('/sign-up')
+@app.route('/sign-up')
 def signup():
     return "<p>signup<p>"

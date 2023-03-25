@@ -4,4 +4,4 @@ from sweatsmart import app, db
 
 @app.route('/')
 def home():
-    return "<h1>Test</h1>"
+    return render_template("home.html")
