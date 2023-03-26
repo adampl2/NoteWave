@@ -4,7 +4,7 @@ from sweatsmart import app, db
 
 @app.route('/login')
 def login():
-    return "<p>login<p>"
+    return render_template("login.html")
 
 
 @app.route('/logout')
@@ -14,4 +14,4 @@ def logout():
 
 @app.route('/sign-up')
 def signup():
-    return "<p>signup<p>"
+    return render_template("sign_up.html")
