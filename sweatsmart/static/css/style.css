@@ -76,3 +76,33 @@ body {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
+
+.add-trip-btn {
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 10em;
+    margin: 40px 55px;
+    border-radius: 1rem;
+    color: #f08080;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+}
+
+.add-trip-btn:active {
+    color: #ffffff;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+}
+
+.add-trip-btn:hover:not(:disabled) {
+    background: #f08080;
+    color: #ffffff;
+    text-shadow: 0 0.1rem #bcb4b4;
+}
+
+.add-trip-btn:disabled {
+    cursor: auto;
+    color: #808080;
+}
