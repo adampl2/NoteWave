@@ -1,19 +1,26 @@
-from flask import render_template, request, redirect, url_for, flash
-from sweatsmart import app, db
+from flask import Blueprint, render_template, request, flash, redirect, url_for
+from .models import User
+from werkzeug.security import generate_password_hash as gph
+from werkzeug.security import check_password_hash
+from . import db   # means from __init__.py import db
+from flask_login import login_user, login_required, logout_user, current_user
 
 
-@app.route('/login', methods=['GET', 'POST'])
+auth = Blueprint('auth', __name__)
+
+
+@auth.route('/login', methods=['GET', 'POST'])
 def login():
     return render_template("login.html")
 
 
-@app.route('/logout')
+@auth.route('/logout')
 def logout():
     return "<p>logout<p>"
 
 
-@app.route('/sign-up', methods=['GET', 'POST'])
-def signup():
+@auth.route('/sign-up', methods=['GET', 'POST'])
+def sign_up():
     if request.method == "POST":
         username = request.form.get('username')
         email = request.form.get('email')
@@ -29,5 +36,11 @@ def signup():
         elif len(password) < 7:
             flash('Password must be at least 7 characters', category='error')
         else:
+            new_user = User(
+                email=email, username=username, password=gph(
+                    password, method='sha256'))
+            db.session.add(new_user)
+            db.session.commit()
             flash('Account created successfully', category='success')
+            return redirect(url_for('routes.home'))
     return render_template("sign_up.html")
