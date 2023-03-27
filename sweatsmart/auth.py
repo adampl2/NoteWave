@@ -11,12 +11,28 @@ auth = Blueprint('auth', __name__)
 
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
+    if request.method == "POST":
+        email = request.form.get('email')
+        password = request.form.get('password')
+
+        user = User.query.filter_by(email=email).first()
+        if user:
+            if check_password_hash(user.password, password):
+                flash('Logged in successfully!', category='success')
+                login_user(user, remember=True)
+                return redirect(url_for('routes.home'))
+            else:
+                flash('Incorrect password, try again.', category='error')
+        else:
+            flash('Email does not exist.', category='error')
     return render_template("login.html")
 
 
 @auth.route('/logout')
+@login_required
 def logout():
-    return "<p>logout<p>"
+    logout_user()
+    return redirect(url_for('auth.login'))
 
 
 @auth.route('/sign-up', methods=['GET', 'POST'])
@@ -27,7 +43,10 @@ def sign_up():
         password = request.form.get('password')
         confirm_password = request.form.get('confirm-password')
 
-        if len(username) < 2:
+        user = User.query.filter_by(email=email).first()
+        if user:
+            flash("User already exists.", category='error')
+        elif len(username) < 2:
             flash('Username must be at least 2 characters', category='error')
         elif len(email) < 4:
             flash('Email must be at least 4 characters', category='error')
@@ -41,6 +60,7 @@ def sign_up():
                     password, method='sha256'))
             db.session.add(new_user)
             db.session.commit()
+            login_user(user, remember=True)
             flash('Account created successfully', category='success')
             return redirect(url_for('routes.home'))
     return render_template("sign_up.html")
