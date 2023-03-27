@@ -3,4 +3,14 @@
 
 {% block content %}
 
+<h1 class="text-center">My Trips</h1>
+
+<div class="text-center">
+    <button class="add-trip-btn"><a href="{{ url_for('routes.add_trip') }}">
+            Add Trip
+        </a></button>
+</div>
+
+
+
 {% endblock %}
