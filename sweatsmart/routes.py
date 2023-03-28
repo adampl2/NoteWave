@@ -11,12 +11,15 @@ routes = Blueprint('routes', __name__)
 @login_required
 def home():
     if request.method == 'POST': 
-        note = request.form.get('note') 
+        note = request.form.get('note')
+        title = request.form.get('note_title') 
 
         if len(note) < 1:
-            flash('Note is too short!', category='error') 
+            flash('Note is too short!', category='error')
+        elif len(title) < 1:
+            flash('Title is required', category='error') 
         else:
-            new_note = Note(data=note, user_id=current_user.id)
+            new_note = Note(title=title, data=note, user_id=current_user.id)
             db.session.add(new_note) 
             db.session.commit()
             flash('Note added successfully!', category='success')
