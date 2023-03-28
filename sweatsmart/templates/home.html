@@ -2,26 +2,32 @@
     %}
 <h3 class="text-center welcome-msg">Welcome, {{ current_user.username }}! 👋</h3>
 <br><br>
-<h1 class="text-center">My Notes</h1>
+<h1 class="text-center home-headings">My Notes</h1>
 <ul class="list-group list-group-flush" id="notes">
     {% for note in user.notes %}
-    <li class="list-group-item">
-        {{ note.data }}
-        <button type="button" class="close" onClick="deleteNote({{ note.id }})">
-            <span aria-hidden="true">&times;</span>
-        </button>
+    <li class="note-item">
+        <div class="note-title">{{ note.title }}</div>
+        <div class="note-container">
+            <div class="note-text">{{ note.data }}</div>
+            <button type="button" class="close delete-button" onClick="deleteNote({{ note.id }})">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
     </li>
     {% endfor %}
 </ul>
+<h1 class="text-center home-headings">Create Notes</h1>
 <form method="POST">
+    <div class="form-title">
+        <label for="note_title">Title:</label>
+        <input type="text" class="form-control" id="note_title" name="note_title" placeholder="Title">
+    </div>
     <div class="form-textarea">
         <textarea name="note" id="note" class="col-lg-6 form-control" placeholder="Add your notes here"
             rows="3"></textarea>
     </div>
-
-    <br />
     <div class="text-center">
-        <button type="submit" class="btn btn-primary">Add Note</button>
+        <button type="submit" class="btn btn-primary add-note-btn">Add Note</button>
     </div>
 </form>
 {% endblock %}
