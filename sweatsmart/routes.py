@@ -1,4 +1,5 @@
 from flask import Blueprint, render_template, request, flash, jsonify
+from flask import url_for, redirect
 from flask_login import login_required, current_user
 from .models import Note
 from . import db
@@ -38,3 +39,17 @@ def delete_note():
             db.session.commit()
 
     return jsonify({})
+
+
+@routes.route("/edit_note/<int:note_id>", methods=["GET", "POST"])
+def edit_note(note_id):
+
+    note = Note.query.get_or_404(note_id)
+
+    if request.method == "POST":
+        note.title = request.form.get("note_title")
+        note.data = request.form.get("note")
+        db.session.commit()
+        flash('Note updated successfully!', category='success')
+        return redirect(url_for("routes.home"))
+    return render_template("edit_note.html", note=note, user=current_user)
