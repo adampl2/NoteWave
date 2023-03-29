@@ -85,9 +85,19 @@ body {
     margin: 5px 20px 50px 5px;
 }
 
-.note-title {
+.note-title-div {
     margin: 15px 0;
     font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+.note-title {
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+.edit-btn > i {
+    margin-left: 10px;
 }
 
 .form-textarea>textarea {
@@ -138,6 +148,10 @@ ul>.note-item {
     margin: 5px 10px;
 }
 
+.add-note-title {
+    font-size: 1.1rem;
+}
+
 .add-note-btn {
-    margin-bottom: 50px;
+    margin: 30px 3px 50px 3px;
 }
