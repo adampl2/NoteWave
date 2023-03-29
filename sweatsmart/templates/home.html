@@ -6,7 +6,10 @@
 <ul class="list-group list-group-flush" id="notes">
     {% for note in user.notes %}
     <li class="note-item">
-        <div class="note-title">{{ note.title }}</div>
+        <div class="note-title-div">
+            <span class="note-title">{{ note.title }}</span>
+            <a href="{{ url_for('routes.edit_note', note_id=note.id) }}" class="edit-btn"><i class="fa fa-edit fa-lg"></i></a>
+        </div>
         <div class="note-container">
             <div class="note-text">{{ note.data }}</div>
             <button type="button" class="close delete-button" onClick="deleteNote({{ note.id }})">
@@ -19,7 +22,7 @@
 <h1 class="text-center home-headings">Create Notes</h1>
 <form method="POST">
     <div class="form-title">
-        <label for="note_title">Title:</label>
+        <label class="add-note-title" for="note_title">Title:</label>
         <input type="text" class="form-control" id="note_title" name="note_title" placeholder="Title">
     </div>
     <div class="form-textarea">

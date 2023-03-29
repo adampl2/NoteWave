@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Edit Note{% endblock %}
+{% block content %}
+<h1 class="text-center home-headings">Edit Note</h1>
+<form method="POST">
+    <div class="form-title">
+        <label class="add-note-title" for="note_title">Title:</label>
+        <input type="text" class="form-control" id="note_title" name="note_title" value="{{ note.title }}">
+    </div>
+    <div class="form-textarea">
+        <textarea name="note" id="note" class="col-lg-6 form-control" rows="3">{{ note.data }}</textarea>
+    </div>
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary add-note-btn">Save Changes</button>
+    </div>
+</form>
+{% endblock %}
