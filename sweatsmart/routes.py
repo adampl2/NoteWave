@@ -24,8 +24,16 @@ def home():
             db.session.add(new_note) 
             db.session.commit()
             flash('Note added successfully!', category='success')
+    
+    notes = Note.query.filter_by(user_id=current_user.id).all()
 
-    return render_template("home.html", user=current_user)
+    if len(notes) == 0:
+        message = "Your notes will appear here."
+    else:
+        message = "My Notes"
+
+    return render_template(
+        "home.html", user=current_user, notes=notes, message=message)
 
 
 @routes.route('/delete-note', methods=['POST'])
