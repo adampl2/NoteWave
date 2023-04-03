@@ -55,11 +55,12 @@
     </div>
     {% endif %} {% endfor %} {% endif %} {% endwith %}
 
-
-    {% block content %}
-
-    {% endblock %}
-
+    <main class="container">
+        <div class="page-content">
+          {% block content %}
+          {% endblock %}
+        </div>
+      </main>
 
     <footer>
         <div class="footer-content">
