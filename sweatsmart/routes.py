@@ -13,7 +13,7 @@ routes = Blueprint('routes', __name__)
 def home():
     if request.method == 'POST': 
         note = request.form.get('note')
-        title = request.form.get('note_title') 
+        title = request.form.get('note_title')  
 
         if len(note) < 1:
             flash('Note is too short!', category='error')
@@ -41,10 +41,17 @@ def delete_note():
     note = json.loads(request.data)
     noteId = note['noteId']
     note = Note.query.get(noteId)
+
     if note:
         if note.user_id == current_user.id:
-            db.session.delete(note)
-            db.session.commit()
+            confirm = request.args.get('confirm')
+            if confirm == 'yes':
+                db.session.delete(note)
+                db.session.commit()
+                return jsonify({})
+            else:
+                return jsonify(
+                    {'message': 'Confirm deletion.', 'noteId': noteId})
 
     return jsonify({})
 

@@ -28,5 +28,8 @@
       "backref",
       "Btns",
       "sweatsmart"
-   ]
+   ],
+   "[javascript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+   }
 }
