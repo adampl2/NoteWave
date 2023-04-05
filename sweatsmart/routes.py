@@ -12,20 +12,19 @@ routes = Blueprint('routes', __name__)
 @routes.route('/', methods=['GET', 'POST'])
 @login_required
 def home():
-    if request.method == 'POST': 
+    if request.method == 'POST':
         note = request.form.get('note')
-        title = request.form.get('note_title') 
+        title = request.form.get('note_title')
 
         if len(note) < 1:
             flash('Note is too short!', category='error')
         elif len(title) < 1:
-            flash('Title is required', category='error') 
+            flash('Title is required', category='error')
         else:
             new_note = Note(title=title, data=note, user_id=current_user.id)
-            db.session.add(new_note) 
+            db.session.add(new_note)
             db.session.commit()
             flash('Note added successfully!', category='success')
-    
     notes = Note.query.filter_by(
         user_id=current_user.id).order_by(desc(Note.date)).all()
 
@@ -40,7 +39,7 @@ def home():
 
 @routes.route('/delete-note', methods=['POST'])
 @login_required
-def delete_note():  
+def delete_note():
     note = json.loads(request.data)
     noteId = note['noteId']
     note = Note.query.get(noteId)
