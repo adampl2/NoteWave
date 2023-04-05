@@ -1,5 +1,5 @@
 import os
-from sweatsmart import create_app
+from notewave import create_app
 
 app = create_app()
 

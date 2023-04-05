@@ -39,6 +39,6 @@ def create_app():
 
 
 def create_database(app):
-    if not path.exists('sweatsmart/' + DB_NAME):
+    if not path.exists('notewave/' + DB_NAME):
         db.create_all(app=app)
         print('Created Database!')
