@@ -59,7 +59,13 @@ def edit_note(note_id):
     if request.method == "POST":
         note.title = request.form.get("note_title")
         note.data = request.form.get("note")
-        db.session.commit()
-        flash('Note updated successfully!', category='success')
-        return redirect(url_for("routes.home"))
+        
+        if len(note.data) < 1:
+            flash('Note is too short!', category='error')
+        elif len(note.title) < 1:
+            flash('Title is required', category='error')
+        else:
+            db.session.commit()
+            flash('Note updated successfully!', category='success')
+            return redirect(url_for("routes.home"))
     return render_template("edit_note.html", note=note, user=current_user)
