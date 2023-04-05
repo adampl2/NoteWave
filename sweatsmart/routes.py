@@ -37,25 +37,17 @@ def home():
         "home.html", user=current_user, notes=notes, message=message)
 
 
-@routes.route('/delete-note', methods=['POST'])
+@routes.route('/delete-note/<int:note_id>', methods=['GET'])
 @login_required
-def delete_note():
-    note = json.loads(request.data)
-    noteId = note['noteId']
-    note = Note.query.get(noteId)
-
-    if note:
-        if note.user_id == current_user.id:
-            confirm = request.args.get('confirm')
-            if confirm == 'yes':
-                db.session.delete(note)
-                db.session.commit()
-                return jsonify({})
-            else:
-                return jsonify(
-                    {'message': 'Confirm deletion.', 'noteId': noteId})
-
-    return jsonify({})
+def delete_note(note_id):
+    note = Note.query.get(note_id)
+    if not note or note.user_id != current_user.id:
+        return render_template("404.html")
+    else:
+        db.session.delete(note)
+        db.session.commit()
+        flash("Your note has been deleted.", category="success")
+        return redirect(url_for('routes.home'))
 
 
 @routes.route("/edit_note/<int:note_id>", methods=["GET", "POST"])
