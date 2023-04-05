@@ -245,6 +245,7 @@ Clone the CryptoSwap repository:
 * [Tech With Tim](https://www.youtube.com/watch?v=dam0GPOAvVI) - Flask, Authentication & Databases.
 * [Yaya12085](https://uiverse.io/Yaya12085/horrible-grasshopper-43) - Sign Up form.
 * [Foolish Developer](https://foolishdeveloper.com/simple-responsive-footer-design-using-html-and-css/) - Footer.
+* [Munim Munna](https://stackoverflow.com/questions/31176402/how-to-hide-flash-message-after-few-seconds) - JQuery function to hide flash message automatically.
 
 - - -
 
