@@ -1,6 +1,7 @@
 from flask import Blueprint, render_template, request, flash, jsonify
 from flask import url_for, redirect
 from flask_login import login_required, current_user
+from sqlalchemy import desc
 from .models import Note
 from . import db
 import json
@@ -13,7 +14,7 @@ routes = Blueprint('routes', __name__)
 def home():
     if request.method == 'POST': 
         note = request.form.get('note')
-        title = request.form.get('note_title')  
+        title = request.form.get('note_title') 
 
         if len(note) < 1:
             flash('Note is too short!', category='error')
@@ -25,7 +26,8 @@ def home():
             db.session.commit()
             flash('Note added successfully!', category='success')
     
-    notes = Note.query.filter_by(user_id=current_user.id).all()
+    notes = Note.query.filter_by(
+        user_id=current_user.id).order_by(desc(Note.date)).all()
 
     if len(notes) == 0:
         message = "Your notes will appear here."
