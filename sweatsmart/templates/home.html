@@ -4,7 +4,7 @@
 
 <h1 class="text-center home-headings">{{ message }}</h1>
 <ul class="list-group list-group-flush" id="notes">
-    {% for note in user.notes %}
+    {% for note in user.notes[::-1] %}
     <li class="note-item">
         <div class="note-title-div">
             <span class="note-title">{{ note.title }}</span>
