@@ -39,6 +39,7 @@ def home():
 
 
 @routes.route('/delete-note', methods=['POST'])
+@login_required
 def delete_note():  
     note = json.loads(request.data)
     noteId = note['noteId']
@@ -59,6 +60,7 @@ def delete_note():
 
 
 @routes.route("/edit_note/<int:note_id>", methods=["GET", "POST"])
+@login_required
 def edit_note(note_id):
 
     note = Note.query.get_or_404(note_id)
