@@ -2,6 +2,8 @@
 /* Inspiration taken from Yaya12085 https://uiverse.io/Yaya12085/horrible-grasshopper-43 */
 
 body {
+    margin: 0;
+    max-width: 100vw;
     background: #fcfcfc;
     font-family: sans-serif;
     box-sizing: border-box;
@@ -162,7 +164,7 @@ ul>.note-item {
 footer {
     background: #111;
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding-top: 30px;
     color: #fff;
     position: relative;
@@ -224,7 +226,7 @@ footer {
 
 .footer-bottom {
     background: #000;
-    width: 100vw;
+    width: 100%;
     padding-left: 26px;
     text-align: center;
 }
