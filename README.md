@@ -1,4 +1,4 @@
-# repo name
+# NoteWave
 
 Developed as part of a milestone project 3 for Code Institute,
 
@@ -192,6 +192,8 @@ It was ensured that the website is accessible and as user-friendly as possible. 
 Please refer to [TESTING.md](TESTING.md) file for full testing procedure.
 
 ### Fixed Bugs
+
+1. When creating a note, there is a minimum number of characters required to create it. However, when editing the note, I noticed I was able to remove all contents from note title and description with no errors. This was later fixed to match create note requirements.
 
 - - -
 
