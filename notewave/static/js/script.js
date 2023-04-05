@@ -7,7 +7,7 @@ function showConfirmDeleteModal(noteId) {
 /** Hides flash message after 5 seconds of inactivity */
 
 setTimeout(function() {
-  $('#flashMessage').fadeOut('fast');
+  $('#flashMessage').fadeOut(1500, "linear");
 }, 5000);
 
 
