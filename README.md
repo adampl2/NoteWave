@@ -44,6 +44,11 @@ Developed as part of a milestone project 3 for Code Institute.
 
 ### Key information for the site
 
+1. Users can create a unique account to securely store their notes.
+2. The app allows users to create, view, edit, and delete their notes at any time.
+3. Notes are sorted by default from the newest created to the oldest.
+4. The app is accessible on multiple devices and platforms, allowing users to access their notes on-the-go.
+5. The app consists of social media links where users can follow or contact the developer.
 
 ### User Stories
 
