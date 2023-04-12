@@ -52,7 +52,9 @@ Developed as part of a milestone project 3 for Code Institute.
 
 ### User Stories
 
-  
+1. First-time user: As a first time user, I want to easily create a new account on the note app, so I can start creating, viewing, editing, and deleting notes. I also want to be able to quickly and intuitively navigate through the note app, so I can easily find the features I need to use and efficiently manage my notes.
+
+2. Frequent user: As a frequent user, I want to be able to easily access my notes from my previous sessions so that I can quickly pick up where I left off and continue my work. I also want to be able to edit, delete, and create new notes when I wish to do so.
 
 ### User Goals
 
