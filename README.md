@@ -160,9 +160,17 @@ It was ensured that the website is accessible and as user-friendly as possible. 
 
 ### Languages Used
 
- HTML, CSS and JavaScript were used for this project.
+ HTML, CSS, JavaScript, and Python were used for this project.
 
 ### Frameworks & Programs Used
+
+* [Flask](https://flask.palletsprojects.com/en/2.2.x/) User as a base for development.
+
+* [jQuery](https://jquery.com/) As JavaScript library.
+
+* [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) As template engine.
+
+* [SQLAlchemy](https://www.sqlalchemy.org/) For designing and managing database.
 
 * [Figma](https://www.figma.com/) For wireframes.
 
@@ -174,7 +182,7 @@ It was ensured that the website is accessible and as user-friendly as possible. 
 
 * [Google Fonts](https://fonts.google.com/) To import the fonts used on the website.
 
-* [Bootstrap](https://getbootstrap.com/) For style.css.
+* [Bootstrap](https://getbootstrap.com/) For style.
 
 * [Font Awesome](https://fontawesome.com/) For the iconography on the website.
 

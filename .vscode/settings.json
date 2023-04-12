@@ -29,7 +29,8 @@
       "Btns",
       "jsonify",
       "sqlalchemy",
-      "sweatsmart"
+      "sweatsmart",
+      "wireframes"
    ],
    "[javascript]": {
       "editor.defaultFormatter": "vscode.typescript-language-features"
