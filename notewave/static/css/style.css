@@ -248,9 +248,9 @@ footer {
     opacity: 0.6;
 }
 
-.footer-bottom span {
+.footer-bottom p span {
     text-transform: uppercase;
-    opacity: .4;
+    color: #cacdd2;
     font-weight: 200;
 }
 

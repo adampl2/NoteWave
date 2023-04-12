@@ -10,6 +10,8 @@ setTimeout(function() {
   $('#flashMessage').fadeOut(1500, "linear");
 }, 5000);
 
+document.getElementById("year").innerHTML = new Date().getFullYear();
+
 
 
 
