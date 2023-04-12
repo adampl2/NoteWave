@@ -76,23 +76,11 @@ Developed as part of a milestone project 3 for Code Institute.
 
 ### Typography
 
-Google Fonts was used for the following fonts:
+Google Fonts was used throughout the whole page:
 
-* ** ** is used
+![main font](docs/font-p3.jpg)
 
-![main font]()
-
-* ** ** 
-
-![logo font]()
-
-* ** ** 
-
-![crypto names font]()
-
-
-
-![the price(numbers)]()
+* **Raleway** font was used because it has a modern and professional look, making it suitable for a note-taking app that aims to provide a clean and polished user interface while ensuring that the text is easily readable. Additionally, it has a wide range of font weights and styles available, making it versatile for various design elements within the app.
 
 ### imagery
 
