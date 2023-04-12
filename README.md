@@ -1,6 +1,8 @@
 # NoteWave
 
-Developed as part of a milestone project 3 for Code Institute,
+NoteWave allows users to create, view, edit, and delete notes from their personalized account. It provides a platform to organize and store important information, thoughts, and ideas in a secure and convenient manner. Users can easily access their notes from any device with internet access. The application is designed to be user-friendly, providing a simple and intuitive interface for efficient note-taking and management.
+
+Developed as part of a milestone project 3 for Code Institute.
 
   ![Multi-screen]()
 
