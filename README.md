@@ -84,10 +84,9 @@ Google Fonts was used throughout the whole page:
 
 ### imagery
 
-
+This website has no images present.
 
 ### Wireframes
-
 
 
 ## Features
