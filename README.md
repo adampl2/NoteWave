@@ -60,19 +60,9 @@ Developed as part of a milestone project 3 for Code Institute.
 
 #### Client goals
 
-
-
-#### First-Time Visitor Goals
-
- 
-
-#### Returning Visitor Goals
-
-   
-
-#### Frequent Visitor Goals
-
-   
+1. Provide a reliable and user-friendly note-taking app for their customers.
+2. Increase customer engagement and satisfaction with the app by adding different features and improving the UI, leading to increased retention and loyalty.
+3. Expand the user base by marketing the app effectively to new potential customers.
 
 - - -
 
