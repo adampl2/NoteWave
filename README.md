@@ -242,6 +242,7 @@ Clone the CryptoSwap repository:
 * [Yaya12085](https://uiverse.io/Yaya12085/horrible-grasshopper-43) - Sign Up form.
 * [Foolish Developer](https://foolishdeveloper.com/simple-responsive-footer-design-using-html-and-css/) - Footer.
 * [Munim Munna](https://stackoverflow.com/questions/31176402/how-to-hide-flash-message-after-few-seconds) - JQuery function to hide flash message automatically.
+* [boryanakrasteva](https://uiverse.io/boryanakrasteva/tidy-falcon-17) - Delete note button.
 
 - - -
 
