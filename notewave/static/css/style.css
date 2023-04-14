@@ -86,8 +86,31 @@ body {
 /* Navbar */
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #cacdd2
-  }
+    color: #cacdd2;
+    position: relative;
+    transition: 0.5s;
+}
+
+/* navbar links underline effect */
+
+.navbar-dark .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    color: #fff;
+}
 
 /* Welcome message */
 
@@ -172,12 +195,12 @@ ul>.note-item {
 }
 
 .delete-btn-icon {
-    transform: scale(1.2);
+    transform: scale(1);
     transition: .2s linear;
 }
 
 .delete-button:hover .delete-btn-icon {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .delete-button:hover .delete-btn-icon path {
