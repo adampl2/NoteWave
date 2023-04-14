@@ -89,6 +89,8 @@ body {
     color: #cacdd2
   }
 
+/* Welcome message */
+
 .welcome-msg {
     margin-top: 30px;
 }
@@ -97,31 +99,7 @@ body {
     margin: 30px 5px 8px 5px;
 }
 
-.edit-heading {
-    margin: 30px 20px 8px 5px;
-}
-
-.note-title-div {
-    margin: 15px 0;
-    font-weight: bolder;
-    font-size: 1.1rem;
-}
-
-.note-title {
-    font-weight: bolder;
-    font-size: 1.1rem;
-}
-
-.edit-btn>i {
-    margin-left: 10px;
-}
-
-.form-textarea>textarea {
-    width: 65%;
-    max-width: 65%;
-    margin: 3px auto;
-    background: #fff8f1;
-}
+/* Each Note - container */
 
 ul>.note-item {
     width: 65%;
@@ -141,26 +119,26 @@ ul>.note-item {
     background: #fff8f1;
 }
 
-.create-note-title {
+/* Note Title margin */
+
+.note-title-div {
+    margin: 15px 0;
+}
+
+/* Note Title font */
+
+.note-title {
     font-weight: bolder;
-    width: 65%;
-    max-width: 65%;
-    margin: 5px auto;
+    font-size: 1.1rem;
 }
 
-.create-note-title>input {
-    width: 30%;
-    background: #fff8f1;
+/* Edit btn */
+
+.edit-btn>i {
+    margin-left: 10px;
 }
 
-.note-text {
-    flex: 1;
-    max-width: 95%;
-    word-wrap: break-word;
-    padding: 25px 15px;
-}
-
-/* Delete button */
+/* Delete note button */
 
 .delete-button {
     display: inline-block;
@@ -212,15 +190,45 @@ ul>.note-item {
     top: -160%;
 }
 
+/* Create Note section */
+
+.create-note-title {
+    font-weight: bolder;
+    width: 65%;
+    max-width: 65%;
+    margin: 5px auto;
+}
+
+.create-note-title>input {
+    width: 30%;
+    background: #fff8f1;
+}
+
+.note-text {
+    flex: 1;
+    max-width: 95%;
+    word-wrap: break-word;
+    padding: 25px 15px;
+}
+
 /* Add Note */
 
 .add-note-title {
     font-size: 1.1rem;
 }
 
+.form-textarea>textarea {
+    width: 65%;
+    max-width: 65%;
+    margin: 3px auto;
+    background: #fff8f1;
+}
+
 .add-note-btn {
     margin: 30px 3px 50px 3px;
 }
+
+/* Footer */
 
 footer {
     background: #111;
