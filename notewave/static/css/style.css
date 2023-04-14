@@ -25,7 +25,7 @@ body {
     position: relative;
 }
 
-.title {
+.form-title {
     text-align: center;
     font-size: 2rem;
     font-weight: bolder;
@@ -34,7 +34,7 @@ body {
 }
 
 .label {
-    color: #000000;
+    color: #1a202c;
     margin-bottom: 4px;
     display: inline-block;
     width: 75%;
@@ -49,7 +49,7 @@ body {
     margin-bottom: 20px;
     width: 75%;
     font-size: 1rem;
-    color: #4a5568;
+    color: #1a202c;
     outline: none;
     border: 1px solid transparent;
     border-radius: 4px;
@@ -62,15 +62,15 @@ body {
 }
 
 .input:valid {
-    border: 1px solid green;
+    border: 1px solid #008000;
 }
 
 .input:invalid {
-    border: 1px solid #0e0e0e34;
+    border: 1px solid #e30505ec;
 }
 
 .submit {
-    background-color: #1a202c;
+    background-color: #111;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -82,6 +82,12 @@ body {
 }
 
 /* Homepage */
+
+/* Navbar */
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #cacdd2
+  }
 
 .welcome-msg {
     margin-top: 30px;
@@ -135,14 +141,14 @@ ul>.note-item {
     background: #fff8f1;
 }
 
-.form-title {
+.create-note-title {
     font-weight: bolder;
     width: 65%;
     max-width: 65%;
     margin: 5px auto;
 }
 
-.form-title>input {
+.create-note-title>input {
     width: 30%;
     background: #fff8f1;
 }
@@ -276,7 +282,7 @@ footer {
 }
 
 .socials a:hover i {
-    color: aqua;
+    color: #00ffff;
 }
 
 .footer-bottom {
