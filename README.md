@@ -179,6 +179,8 @@ It was ensured that the website is accessible and as user-friendly as possible. 
 
 * [Favicon.io](https://favicon.io/) To create favicon.
 
+* [uiverse](https://uiverse.io/) UI elements.
+
 - - -
 
 ## Testing
@@ -244,6 +246,7 @@ Clone the CryptoSwap repository:
 * [Munim Munna](https://stackoverflow.com/questions/31176402/how-to-hide-flash-message-after-few-seconds) - JQuery function to hide flash message automatically.
 * [boryanakrasteva](https://uiverse.io/boryanakrasteva/tidy-falcon-17) - Delete note button.
 * [30secondsofcode](https://www.30secondsofcode.org/css/s/hover-underline-animation/) - Navbar links.
+* [AbanoubMagdy1](https://uiverse.io/AbanoubMagdy1/afraid-yak-99) - Add Title input.
 
 - - -
 
