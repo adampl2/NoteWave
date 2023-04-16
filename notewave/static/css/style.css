@@ -42,7 +42,7 @@ body {
     font-size: 1.2rem;
 }
 
-.input {
+.auth-input {
     display: inline-block;
     text-align: left;
     padding: 10px;
@@ -56,16 +56,16 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
-.input:focus {
+.auth-input:focus {
     background-color: #fff;
     box-shadow: 0 0 0 2px #cbd5e0;
 }
 
-.input:valid {
+.auth-input:valid {
     border: 1px solid #008000;
 }
 
-.input:invalid {
+.auth-input:invalid {
     border: 1px solid #e30505ec;
 }
 
@@ -220,12 +220,78 @@ ul>.note-item {
     font-weight: bolder;
     width: 65%;
     max-width: 65%;
-    margin: 5px auto;
+    margin: 10px auto;
+    position: relative;
 }
 
-.create-note-title>input {
-    width: 30%;
-    background: #fff8f1;
+.create-note-title>.create-note-input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+}
+
+.create-note-title .create-note-input:focus {
+    outline: none;
+}
+
+.create-note-title .add-note-title {
+    color: #999;
+    font-size: 1.1rem;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    display: flex;
+}
+
+.create-note-title .label-char {
+    letter-spacing: 1px;
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--index) * .05s);
+}
+
+.create-note-title .create-note-input:focus~label .label-char,
+.create-note-title .create-note-input:valid~label .label-char {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #5264AE;
+}
+
+.create-note-title .bar {
+    position: relative;
+    display: block;
+    width: 200px;
+}
+
+.create-note-title .bar:before,
+.create-note-title .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.create-note-title .bar:before {
+    left: 50%;
+}
+
+.create-note-title .bar:after {
+    right: 50%;
+}
+
+.create-note-title .create-note-input:focus ~ .bar:before,
+.create-note-title .create-note-input:focus ~ .bar:after {
+  width: 50%;
 }
 
 .note-text {
@@ -235,11 +301,7 @@ ul>.note-item {
     padding: 25px 15px;
 }
 
-/* Add Note */
-
-.add-note-title {
-    font-size: 1.1rem;
-}
+/* Note textarea */
 
 .form-textarea>textarea {
     width: 65%;
@@ -255,7 +317,7 @@ ul>.note-item {
 /* Edit note section */
 
 .edit-heading {
-    margin-top: 30px;
+    margin: 30px 20px;
 }
 
 /* Footer */
