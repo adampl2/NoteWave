@@ -191,6 +191,8 @@ Please refer to [TESTING.md](TESTING.md) file for full testing procedure.
 
 1. When creating a note, there is a minimum number of characters required to create it. However, when editing the note, I noticed I was able to remove all contents from note title and description with no errors. This was later fixed to match create note requirements.
 
+2. The after pseudo element in the delete button did not appear fully when hovered. This was fixed by adding z-index of 0 and specifying note container's position as relative.
+
 - - -
 
 ## Deployment & Local Development
