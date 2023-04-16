@@ -4,8 +4,8 @@
 <h1 class="text-center edit-heading">Edit Note</h1>
 <form method="POST">
     <div class="create-note-title">
-        <label class="add-note-title" for="note_title">Title:</label>
-        <input type="text" class="form-control" id="note_title" name="note_title" value="{{ note.title }}">
+        <label class="add-note-title" for="note_title"></label>
+        <input type="text" class="form-control" id="note_title" name="note_title" value="{{ note.title }}" placeholder="New title">
     </div>
     <div class="form-textarea">
         <textarea name="note" id="note" class="col-lg-6 form-control" rows="3">{{ note.data }}</textarea>
