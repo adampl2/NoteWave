@@ -12,7 +12,7 @@
                     class="fa fa-edit fa-lg"></i></a>
         </div>
         <div class="note-container">
-            <div class="note-text">{{ note.data }}</div>
+            <div class="note-data">{{ note.data }}</div>
             <button type="button" class="close delete-button" onClick="showConfirmDeleteModal({{ note.id }})">
                 <span aria-hidden="true"><svg viewBox="0 0 15 17.5" height="17.5" width="15"
                         xmlns="http://www.w3.org/2000/svg" class="delete-btn-icon">
@@ -39,8 +39,8 @@
         </label>
     </div>
     <div class="form-textarea">
-        <textarea name="note" id="note" class="col-lg-6 form-control" placeholder="Add your notes here"
-            rows="3"></textarea>
+        <textarea name="note" id="note" class="col-lg-6 form-control" placeholder="Write your note here"
+            rows="4"></textarea>
     </div>
     <div class="text-center">
         <button type="submit" class="btn btn-primary add-note-btn">Add Note</button>

@@ -131,6 +131,19 @@ ul>.note-item {
     list-style-type: none;
 }
 
+/* Note Title margin */
+
+.note-title-div {
+    margin: 15px 0;
+}
+
+/* Note Title font */
+
+.note-title {
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
 .note-container {
     width: 100%;
     display: flex;
@@ -143,17 +156,11 @@ ul>.note-item {
     background: #fff8f1;
 }
 
-/* Note Title margin */
-
-.note-title-div {
-    margin: 15px 0;
-}
-
-/* Note Title font */
-
-.note-title {
-    font-weight: bolder;
-    font-size: 1.1rem;
+.note-data {
+    flex: 1;
+    max-width: 95%;
+    word-wrap: break-word;
+    padding: 25px 15px;
 }
 
 /* Edit btn */
@@ -216,6 +223,8 @@ ul>.note-item {
 
 /* Create Note section */
 
+/* Title */
+
 .create-note-title {
     font-weight: bolder;
     width: 65%;
@@ -239,7 +248,7 @@ ul>.note-item {
 }
 
 .create-note-title .add-note-title {
-    color: #999;
+    color: #212529;
     font-size: 1.1rem;
     font-weight: normal;
     position: absolute;
@@ -289,16 +298,9 @@ ul>.note-item {
     right: 50%;
 }
 
-.create-note-title .create-note-input:focus ~ .bar:before,
-.create-note-title .create-note-input:focus ~ .bar:after {
-  width: 50%;
-}
-
-.note-text {
-    flex: 1;
-    max-width: 95%;
-    word-wrap: break-word;
-    padding: 25px 15px;
+.create-note-title .create-note-input:focus~.bar:before,
+.create-note-title .create-note-input:focus~.bar:after {
+    width: 50%;
 }
 
 /* Note textarea */
@@ -382,7 +384,7 @@ footer {
 }
 
 .socials a:hover i {
-    color: #00ffff;
+    color: #5264AE;
 }
 
 .footer-bottom {
