@@ -88,6 +88,29 @@ This website has no images present.
 
 ### Wireframes
 
+1. **Desktop** - Home
+![Desktop-home](docs/Desktop-home.jpg)
+
+2. **Desktop** - Edit
+![Desktop-edit](docs/Desktop-edit.jpg)
+
+3. **Desktop** - Sign Up
+![Desktop-signup](docs/Desktop-signup.jpg)
+
+4. **Desktop** - Login
+![Desktop-login](docs/Desktop-login.jpg)
+
+5. **Mobile** - Home
+![Mobile-home](docs/Mobile-home.jpg)
+
+6. **Mobile** - Edit
+![Mobile-edit](docs/Mobile-edit.jpg)
+
+7. **Mobile** - Sign Up
+![Mobile-signup](docs/Mobile-signup.jpg)
+
+8. **Mobile** - Login
+![Mobile-login](docs/Mobile-login.jpg)
 
 ## Features
 
