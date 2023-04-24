@@ -70,9 +70,17 @@ Developed as part of a milestone project 3 for Code Institute.
 
 ### Colour Scheme
 
+* Linen **(#FFF1E5)** is the main color used as a background of the page. Incorporated from the Financial Times website, this font creates a subtle and calming effect on the eyes of the reader, making it easier to read and process the content on the website. Additionally, the use of Linen as a background color provides a clean and sophisticated look to the overall design, which aligns with the Financial Times' brand image.
 
+* Night **(#111)** is used in both forms for labels, titles, inputs, and the login/sign up buttons. It is also used for add note button and footer background. Night it is a dark color that provides a strong contrast against the light Linen background, making it easy to distinguish and navigate through different sections of the website. Moreover, the use of Night as the primary accent color on the website creates a bold and modern look, which enhances the visual appeal of the overall design.
 
-   ![Colour Palette]()
+* Seashell **(#FFF8F1)** is used as an alternative to white (#FFF) color for several elements on the page. It has a warmer and more natural tone than pure white, creating a softer and more inviting look for the website.
+
+* French Gray **(#CACDD2)** is used for navbar links, footer text (p) and copyright text. because it is a muted and subtle color that provides a clear visual contrast against the Night (#111) background while still being easy on the eyes.
+
+* Savoy Blue **(#5264AE)** is used for hover state, edit button, title field (focus & valid), and social media icons.
+
+  * ![Colour Palette](docs/color-palette.jpg)
 
 ### Typography
 
