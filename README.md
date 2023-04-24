@@ -88,35 +88,35 @@ This website has no images present.
 
 ### Wireframes
 
-1. **Desktop** - Home
+* **Desktop** - Home
 
 ![Desktop-home](docs/Desktop-home.jpg)
 
-2. **Desktop** - Edit
+* **Desktop** - Edit
 
 ![Desktop-edit](docs/Desktop-edit.jpg)
 
-3. **Desktop** - Sign Up
+* **Desktop** - Sign Up
 
 ![Desktop-signup](docs/Desktop-signup.jpg)
 
-4. **Desktop** - Login
+* **Desktop** - Login
 
 ![Desktop-login](docs/Desktop-login.jpg)
 
-5. **Mobile** - Home
+* **Mobile** - Home
 
 ![Mobile-home](docs/Mobile-home.jpg)
 
-6. **Mobile** - Edit
+* **Mobile** - Edit
 
 ![Mobile-edit](docs/Mobile-edit.jpg)
 
-7. **Mobile** - Sign Up
+* **Mobile** - Sign Up
 
 ![Mobile-signup](docs/Mobile-signup.jpg)
 
-8. **Mobile** - Login
+* **Mobile** - Login
 
 ![Mobile-login](docs/Mobile-login.jpg)
 
@@ -205,6 +205,8 @@ It was ensured that the website is accessible and as user-friendly as possible. 
 * [Font Awesome](https://fontawesome.com/) For the iconography on the website.
 
 * [Google Dev Tools](https://developer.chrome.com/docs/devtools/) For troubleshooting, testing features and solving issues with responsiveness and styling.
+
+* [Coolors](https://coolors.co/) To generate colour palette.
 
 * [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
 
