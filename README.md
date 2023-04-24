@@ -132,7 +132,7 @@ This website has no images present.
 
 ### The Home Page
 
-The page only consists of the Home page where all features and content are present & responsive.
+The page consists of the base template, home, edit_note, login, sign_up, and 404 pages where all features and content are present & responsive.
 
 * The browser tab & favicon:
 
