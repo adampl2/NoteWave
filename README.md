@@ -234,6 +234,8 @@ Please refer to [TESTING.md](TESTING.md) file for full testing procedure.
 
 2. The after pseudo element in the delete button did not appear fully when hovered. This was fixed by adding z-index of 0 and specifying note container's position as relative.
 
+3. Favicon not rendering. This was fixed by moving the favicon files to the static directory.
+
 - - -
 
 ## Deployment & Local Development
