@@ -20,6 +20,7 @@ Developed as part of a milestone project 3 for Code Institute.
   * [`Wireframes`](#wireframes)
   * [`Features`](#features)
     * [`Desktop`](#desktop)
+    * [`Mobile`](#mobile)
     * [`Future Implementations`](#future-implementations)
   * [`Accessibility`](#accessibility)
 
@@ -197,6 +198,10 @@ The page consists of the base template, home, edit_note, login, sign_up, and 404
 3. Ability to customize notes, e.g. using colours.
 
 4. Back to top button.
+
+5. Voice-to-text functionality, allowing users to dictate their notes using their device's microphone.
+
+6. Offline mode, allowing users to access their notes even when they don't have an internet connection.
 
 ### Accessibility
 
