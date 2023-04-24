@@ -19,7 +19,7 @@ Developed as part of a milestone project 3 for Code Institute.
   * [`Imagery`](#imagery)
   * [`Wireframes`](#wireframes)
   * [`Features`](#features)
-    * [`The Home Page`](#the-home-page)
+    * [`Desktop`](#desktop)
     * [`Future Implementations`](#future-implementations)
   * [`Accessibility`](#accessibility)
 
@@ -130,45 +130,73 @@ This website has no images present.
 
 ## Features
 
-### The Home Page
-
 The page consists of the base template, home, edit_note, login, sign_up, and 404 pages where all features and content are present & responsive.
+
+### Desktop
 
 * The browser tab & favicon:
 
-  ![favicon]()
+  ![favicon](docs/features/features-favicon.jpg)
 
-* 
+* The Navbar:
 
-  ![navbar]()
+  ![navbar](docs/features/features-navbar.jpg)
 
+* Created note:
 
-* 
+  ![note](docs/features/features-note.jpg)
 
-  ![footer]()
+* Add note:
+
+  ![add note](docs/features/features-add-note.jpg)
+
+* Footer:
+
+  ![footer](docs/features/features-footer.jpg)
+
+* Edit note:
+
+  ![edit](docs/features/features-edit-note.jpg)
+
+* Login:
+
+  ![login](docs/features/features-login.jpg)
+
+* Sing Up:
+
+  ![signup](docs/features/features-signup.jpg)
 
 ### Mobile
 
-* 
+* Navbar + Created note:
 
-  ![mobile view top]()
+  ![mobile top](docs/features/featuresm-top.jpg)
 
-* 
+* Create Note + Footer:
 
-  ![mobile convert]()
+  ![mobile bottom](docs/features/featuresm-bot.jpg)
 
-* 
+* Edit:
 
-  ![mobile learn]()
-  ![mobile learn more txt]()
+  ![mobile edit](docs/features/featuresm-edit.jpg)
 
-* Footer
+* Login:
 
-  ![footer]()
+  ![login](docs/features/featuresm-login.jpg)
+
+* Sign Up:
+
+  ![signup](docs/features/featuresm-signup.jpg)
 
 ### Future Implementations
 
+1. Create `Forgot Password` option for users when logging in if the password is forgotten by the user or a password reset is intended.
 
+2. Ability to sort notes based on importance.
+
+3. Ability to customize notes, e.g. using colours.
+
+4. Back to top button.
 
 ### Accessibility
 
