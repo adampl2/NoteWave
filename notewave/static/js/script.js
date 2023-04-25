@@ -19,8 +19,6 @@ function showConfirmDeleteModal(noteId) {
   $('#confirmDeleteModal').modal('show');
 }
 
-addEventListener('DOMContentLoaded', showConfirmDeleteModal);
-
 
 
 
