@@ -50,7 +50,7 @@ The [W3C validator](https://validator.w3.org/) was used to validate the HTML and
 
 * script.js Validation
 
-  * [`script.js`]() - No errors,
+  * [`script.js`](docs/testing-js.jpg) - The JSHint comments are inaccurate as they are reporting an undefined variable as a jQuery function and an unused variable as being used. Therefore, the comments should be reviewed and revised to provide more accurate information.
 
 - - -
 
