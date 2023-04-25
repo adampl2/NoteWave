@@ -20,27 +20,34 @@ Testing progressed at every stage of this project. This ensured that most issues
 
 ## Automated Testing
 
+Since this is a Flask application, there are errors, however, they are only referring to syntax that is used within the Flask application and therefore, are not relevant.
+
 ### W3C Validator
 
 The [W3C validator](https://validator.w3.org/) was used to validate the HTML and CSS pages.
 
 * HTML Validation
 
-  * ![base.html](docs/)
+* base.html
+  * ![base.html](docs/testing-base.jpg)
 
-  * ![edit_note.html](docs/)
+* edit_note.html
+  * ![edit_note.html](docs/testing-edit.jpg)
 
-  * ![home.html](docs/)
+* home.html
+  * ![home.html](docs/testing-home.jpg)
 
-  * ![login.html](docs/)
+* login.html
+  * ![login.html](docs/testing-login.jpg)
 
-  * ![sign_up.html](docs/)
+* sign_up.html
+  * ![sign_up.html](docs/testing-signup.jpg)
 
-  * ![404.html](docs/)
+* 404.html
+  * ![404.html](docs/testing-404.jpg)
 
 * CSS Validation
-
-![CSS](docs/)
+  * ![CSS](docs/)
 
 - - -
 
