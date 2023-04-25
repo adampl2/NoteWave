@@ -269,6 +269,8 @@ Please refer to [TESTING.md](TESTING.md) file for full testing procedure.
 
 3. Favicon not rendering. This was fixed by moving the favicon files to the static directory.
 
+4. When trying to sort the notes from the newest created to the oldest using filter_by and order_by methods, I encountered a bug which prevented the notes from sorting accordingly. This issue was later fixed by looping in reverse `([::-1])` in the HTML template.
+
 - - -
 
 ## Deployment & Local Development
