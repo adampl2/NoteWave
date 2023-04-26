@@ -65,11 +65,11 @@ The [W3C validator](https://validator.w3.org/) was used to validate the HTML and
 
 ### Desktop
 
-![Desktop](docs/)
+![Desktop](docs/lighthouse-desktop.jpg)
 
 ### Mobile
 
-![Mobile](docs/)
+![Mobile](docs/lighthouse-mobile.jpg)
 
 - - -
 
