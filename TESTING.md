@@ -47,7 +47,7 @@ The [W3C validator](https://validator.w3.org/) was used to validate the HTML and
   * ![404.html](docs/testing-404.jpg)
 
 * CSS Validation
-  * ![CSS](docs/)
+  * ![CSS](docs/testing-css.jpg)
 
 - - -
 
