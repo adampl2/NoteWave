@@ -1,4 +1,4 @@
-{% extends "base.html" %} 
+{% extends "base.html" %}
 {% block title %}Home{% endblock %}
 {% block content %}
 
@@ -40,7 +40,7 @@
 <h1 class="text-center home-headings">Create Notes</h1>
 <form method="POST">
     <div class="create-note-title">
-        <input type="text" class="create-note-input" id="note_title" name="note_title" required="">
+        <input type="text" class="create-note-input" id="note_title" name="note_title" required="" maxlength="50">
         <span class="bar"></span>
         <label class="add-note-title" for="note_title">
             <span class="label-char" style="--index: 0">T</span>
@@ -51,8 +51,8 @@
         </label>
     </div>
     <div class="form-textarea">
-        <textarea name="note" id="note" class="form-control" placeholder="Write your note here"
-            rows="4"></textarea>
+        <textarea name="note" id="note" class="form-control" placeholder="Write your note here" rows="4">
+        </textarea>
     </div>
     <div class="text-center">
         <button type="submit" class="btn add-note-btn">Add Note</button>
