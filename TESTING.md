@@ -81,8 +81,9 @@ The [W3C validator](https://validator.w3.org/) was used to validate the HTML and
 
 | Goals | How are they achieved? |
 | :--- | :--- |
-| First-time user: As a first time user, I want to easily create a new account on the note app, so I can start creating, viewing, editing, and deleting notes. I also want to be able to quickly and intuitively navigate through the note app, so I can easily find the features I need to use and efficiently manage my notes. | I have created... | I want the site to be responsive to my device. | I have developed the site with responsiveness in mind. |
-| Frequent user: As a frequent user, I want to be able to easily access my notes from my previous sessions so that I can quickly pick up where I left off and continue my work. I also want to be able to edit, delete, and create new notes when I wish to do so. | I have created... |
+| First-time user: As a first time user, I want to easily create a new account on the note app, so I can start creating, viewing, editing, and deleting notes. I also want to be able to quickly and intuitively navigate through the note app, so I can easily find the features I need to use and efficiently manage my notes. | I have created prominent "Sign Up" button and a simple sign-up form. The app's clean and organized interface, with a clear menu and search function, made it easy to navigate. The app was made responsive through optimized design techniques for different devices. |
+| I want the site to be responsive to my device. | I have developed the site with responsiveness in mind. |
+| Frequent user: As a frequent user, I want to be able to easily access my notes from my previous sessions so that I can quickly pick up where I left off and continue my work. I also want to be able to edit, delete, and create new notes when I wish to do so. | I have created clear buttons for editing, deleting, and creating new notes. |
 
 - - -
 
@@ -98,36 +99,50 @@ Further testing was performed by friends & family. No issues reported.
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| The Logo | Link should refresh the page | Logo clicked | Home page reloads | Pass |
-| *Buy Crypto!* button | Redirects user to external Binance page | Clicked on button | Binance page opens in a separate window | Pass |
-| *Coinmarketcap* button | Redirects user to external Coinmarketcap page | Clicked on button | Coinmarketcap page opens in a separate window | Pass |
-| *News* button | Redirects user to external Coindesk page | Clicked on button | Coindesk page opens in a separate window | Pass |
-| *Learn about crypto* button | Redirects user to Learn about crypto section on the page | Clicked on button | User redirected to Learn about crypto section | Pass
+| Home button | Should refresh the page | Button clicked | Home page reloads | Pass |
+| Logout button | User logged out | Clicked on button | User is redirected to login | Pass |
+| Title input | Should allow the user to enter title | Wrote title | Title written | Pass |
+| Note textarea | Should allow the user to enter note contents | Wrote contents | Note written | Pass |
+| Add Note button | Should create note and display it above | Clicked on button | Note added accordingly | Pass |
+| Edit button | Should redirect the user to the edit page  | Clicked on button | User redirected to the edit page | Pass |
+| Delete button | Should show modal  | Clicked on button | Modal appeared | Pass |
+| Facebook link | Should redirect to facebook.com  | Clicked on link | User redirected | Pass |
+| Twitter link | Should redirect to twitter.com  | Clicked on link | User redirected | Pass |
+| GitHub link | Should redirect to github.com  | Clicked on link | User redirected | Pass |
+| LinkedIn link | Should redirect to linkedin.com  | Clicked on link | User redirected | Pass |
+| copyright link | Should redirect to github.com  | Clicked on link | User redirected | Pass |
+| alert `x` button | Should close alert message  | Clicked on button | Alert closed | Pass |
 
-`Home page - Convert Your Bitcoin`
-
-| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
-| --- | --- | --- | --- | --- |
-| Enter amount in BTC input | User should see converter amount in EUR | Any amount entered from 0 to 21,000,000 | BTC/EUR conversion | Pass |
-| Enter amount in BTC input | User should see "Please enter only numeric values" message | Entered anything other than a Number | "Please enter only numeric values" message appears below in red | Pass |
-| Enter amount in BTC input | User should see "The max limit is 21000000" message | Enter a number greater than 21,000,000BTC | "The max limit is 21000000" appears below in red| Pass |
-
-`Home page - Learn About Crypto`
-
-| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
-| --- | --- | --- | --- | --- |
-| Crypto Tabs | A tab consisting of a description of each crypto & *Read less* button should appear below | Tab clicked | New content appears | Pass |
-| *Read more* button | User should see expanded paragraph | Button clicked | Text expands | Pass |
-| *Read less* button | Expanded paragraph should collapse back to its original shortened form | Button clicked | Expanded text disappears | Pass |
-
-`Home page - Footer`
+`Home page - Modal`
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| *Data Dash* button | Data Dash Youtube channel should open in a new window | Button clicked | Page opens in a separate window | Pass |
-| *Phil Konieczny (PL)* button | Phil's Youtube channel should open in a new window | Button clicked | Page opens in a separate window | Pass |
-| *Binance* button | Binance exchange should open in a new window | Button clicked | Page opens in a separate window | Pass |
-| *Coindesk* button | Coindesk exchange should open in a new window | Button clicked | Page opens in a separate window | Pass |
-| Facebook link | Facebook should open in a new window | Link clicked | Page opens in a separate window | Pass |
-| Twitter link | Twitter should open in a new window | Link clicked | Page opens in a separate window | Pass |
-| Instagram link | Instagram should open in a new window | Link clicked | Page opens in a separate window | Pass
+| `x` button | Should hide the modal  | Clicked on button | Modal hidden | Pass |
+| Cancel button | Should hide the modal  | Clicked on button | Modal hidden | Pass |
+| Delete button | Should delete the note  | Clicked on button | Note deleted | Pass |
+
+`Edit note page`
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Title input | User should be able to enter title | Title entered | Title input filled | Pass |
+| Note body | User should be able to enter note field | Note body typed | Note body is filled | Pass |
+| Save Changes button | Should save the note with changes made by user | Button clicked | Note updated | Pass |
+
+`Login page`
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Login button | Should refresh page | Button clicked | Page reloads | Pass |
+| Sign Up button | User redirected to Sign up page | Button clicked | User redirected | Pass |
+| Email/password fields | Should let user enter email/password | Input entered | Fields are filled with text/*s | Pass |
+| Login button | Should login the user | Button clicked | User logged in | Pass |
+
+`Sign Up page`
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Login button | Should redirect user to login page | Button clicked | User redirected | Pass |
+| Sign Up button | Should reload page | Button clicked | Page reloads | Pass |
+| Email/username/password fields | Should let user enter email/username/password | Input entered | Fields are filled with text/*s | Pass |
+| Register button | User redirected to their home page | Button clicked | User account created | Pass |
