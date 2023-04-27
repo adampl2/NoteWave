@@ -61,6 +61,12 @@ The [W3C validator](https://validator.w3.org/) was used to validate the HTML and
 
 - - -
 
+### Python Testing
+
+[]
+
+- - -
+
 ### Lighthouse
 
 ### Desktop
@@ -145,4 +151,4 @@ Further testing was performed by friends & family. No issues reported.
 | Login button | Should redirect user to login page | Button clicked | User redirected | Pass |
 | Sign Up button | Should reload page | Button clicked | Page reloads | Pass |
 | Email/username/password fields | Should let user enter email/username/password | Input entered | Fields are filled with text/*s | Pass |
-| Register button | User redirected to their home page | Button clicked | User account created | Pass |
+| Register button | User redirected to their home page | Button clicked | User account created | Pass
