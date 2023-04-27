@@ -203,6 +203,8 @@ The page consists of the base template, home, edit_note, login, sign_up, and 404
 
 6. Offline mode, allowing users to access their notes even when they don't have an internet connection.
 
+7. Ability to delete user account permanently.
+
 ### Accessibility
 
 It was ensured that the website is accessible and as user-friendly as possible. I have achieved this by:
