@@ -233,6 +233,8 @@ It was ensured that the website is accessible and as user-friendly as possible. 
 
 * [SQLAlchemy](https://www.sqlalchemy.org/) For designing and managing database.
 
+* [ElephantSQL](https://www.elephantsql.com/) Manage database.
+
 * [Figma](https://www.figma.com/) For wireframes.
 
 * [Git](https://git-scm.com/) As version control.
