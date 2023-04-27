@@ -1,9 +1,17 @@
 {% extends "base.html" %} 
 {% block title %}Home{% endblock %}
 {% block content %}
+
+<!-- welcome message, greets current user based on their username -->
+
 <h3 class="text-center welcome-msg">Welcome, {{ current_user.username }}!</h3>
 
+<!-- This message will only display if there is 0 notes -->
+
 <h1 class="text-center home-headings">{{ message }}</h1>
+
+<!-- Each note -->
+
 <ul class="list-group list-group-flush" id="notes">
     {% for note in user.notes[::-1] %}
     <li class="note-item">
@@ -26,6 +34,9 @@
     </li>
     {% endfor %}
 </ul>
+
+<!-- Create note field -->
+
 <h1 class="text-center home-headings">Create Notes</h1>
 <form method="POST">
     <div class="create-note-title">
@@ -47,6 +58,9 @@
         <button type="submit" class="btn add-note-btn">Add Note</button>
     </div>
 </form>
+
+<!-- Confirm deletion of note modal, only appears when DELETE button clicked -->
+
 <div class="modal fade" id="confirmDeleteModal" tabindex="-1" role="dialog" aria-labelledby="confirmDeleteModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">

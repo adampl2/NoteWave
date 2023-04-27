@@ -1,4 +1,8 @@
+/* Google font import */
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* Sets default body specifications, including behavior of width and height */
 
 body {
     margin: 0;
@@ -67,6 +71,8 @@ body {
 .auth-input:invalid {
     border: 1px solid #e30505ec;
 }
+
+/* Button */
 
 .submit {
     background-color: #111;
@@ -146,6 +152,8 @@ ul>.note-item {
     font-size: 1.1rem;
 }
 
+/* Sets created note properties */
+
 .note-container {
     width: 100%;
     display: flex;
@@ -157,6 +165,8 @@ ul>.note-item {
     border-radius: 6px;
     background: #fff8f1;
 }
+
+/* Note contents */
 
 .note-data {
     flex: 1;
@@ -189,6 +199,8 @@ ul>.note-item {
     right: 8px;
 }
 
+/* Creates the red box with "DELETE" text when hovered */
+
 .delete-button::after {
     content: 'delete';
     position: absolute;
@@ -210,18 +222,26 @@ ul>.note-item {
     z-index: 0;
 }
 
+/* Sets the icon size and sets transition to 0.2s */
+
 .delete-btn-icon {
     transform: scale(1);
     transition: .2s linear;
 }
 
+/* Enlarges the icon by 1.2 when hovered */
+
 .delete-button:hover .delete-btn-icon {
     transform: scale(1.2);
 }
 
+/* Sets box color */
+
 .delete-button:hover .delete-btn-icon path {
     fill: #a80707;
 }
+
+/* Makes the box visible and sets its position */
 
 .delete-button:hover::after {
     visibility: visible;
@@ -254,6 +274,8 @@ ul>.note-item {
     outline: none;
 }
 
+/* Label */
+
 .create-note-title .add-note-title {
     font-size: 1.1rem;
     font-weight: normal;
@@ -264,11 +286,15 @@ ul>.note-item {
     display: flex;
 }
 
+/* Label - each character: transition */
+
 .create-note-title .label-char {
     letter-spacing: 1px;
     transition: 0.2s ease all;
     transition-delay: calc(var(--index) * .05s);
 }
+
+/* Alters position of each letter: Y axis */
 
 .create-note-title .create-note-input:focus~label .label-char,
 .create-note-title .create-note-input:valid~label .label-char {
@@ -277,11 +303,15 @@ ul>.note-item {
     color: #5264AE;
 }
 
+/* Sets the initial position of the input bar */
+
 .create-note-title .bar {
     position: relative;
     display: block;
     width: 200px;
 }
+
+/* Changes bar position and fills with background color when clicked */
 
 .create-note-title .bar:before,
 .create-note-title .bar:after {
@@ -316,6 +346,8 @@ ul>.note-item {
     margin: 3px auto;
     background: #fff8f1;
 }
+
+/* Button to add a note */
 
 .add-note-btn {
     margin: 30px 3px 50px 3px;
@@ -370,6 +402,8 @@ footer {
     color: #cacdd2;
 }
 
+/* Social media icons */
+
 .socials {
     list-style: none;
     display: flex;
@@ -401,6 +435,8 @@ footer {
     color: #5264AE;
 }
 
+/* Copyrights section */
+
 .footer-bottom {
     background: #000;
     width: 100%;
@@ -431,6 +467,8 @@ footer {
     font-weight: 200;
 }
 
+/* Media queries for mobile or max device width of 500px */
+
 @media (max-width:500px) {
 
     .navbar-dark .navbar-nav .nav-link {
@@ -451,7 +489,9 @@ footer {
     }
 }
 
-@media (min-width:501px) and (max-width: 990px) {
+/* Media queries for tablet/laptop or max device width of 990px, min - 501px */
+
+@media (min-width: 501px) and (max-width: 990px) {
     .login-signup-forms {
         width: 65%;
     }
