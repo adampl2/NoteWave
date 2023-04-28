@@ -243,6 +243,8 @@ It was ensured that the website is accessible and as user-friendly as possible. 
 
 * [GitPod](https://gitpod.io) IDE used to create the site.
 
+* [Heroku](https://heroku.com) For deployment.
+
 * [Google Fonts](https://fonts.google.com/) To import the fonts used on the website.
 
 * [Bootstrap](https://getbootstrap.com/) For style.
