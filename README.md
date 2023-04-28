@@ -4,7 +4,7 @@ NoteWave allows users to create, view, edit, and delete notes from their persona
 
 Developed as part of a milestone project 3 for Code Institute.
 
-  ![Multi-screen]()
+  ![Multi-screen](docs/multiscreen.jpg)
 
 [View the deployed website here](https://notewave.herokuapp.com/)
 
