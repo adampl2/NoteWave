@@ -333,6 +333,7 @@ Clone the CryptoSwap repository:
 * [boryanakrasteva](https://uiverse.io/boryanakrasteva/tidy-falcon-17) - Delete note button.
 * [30secondsofcode](https://www.30secondsofcode.org/css/s/hover-underline-animation/) - Navbar links.
 * [AbanoubMagdy1](https://uiverse.io/AbanoubMagdy1/afraid-yak-99) - Add Title input.
+* [Vincent Stevenson](https://www.youtube.com/watch?v=ZmEg2bLOf3s) - Help with Heroku deployment via sqlite.
 
 - - -
 
