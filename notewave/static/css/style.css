@@ -487,4 +487,8 @@ footer {
     .login-signup-forms {
         width: 65%;
     }
+
+    .navbar-dark .navbar-nav .nav-link {
+        width: fit-content;
+    }
 }
