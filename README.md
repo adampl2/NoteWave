@@ -27,6 +27,7 @@ Developed as part of a milestone project 3 for Code Institute.
 * [`Technologies Used`](#technology)
   * [`Languages Used`](#languages-used)
   * [`Frameworks, Libraries & Programs Used`](#frameworks--programs-used)
+  * [`Data Schema`](#data-schema)
 
 * [`Deployment & Local Development`](#deployment--local-development)
   * [`Deployment`](#deployment)
@@ -261,6 +262,10 @@ It was ensured that the website is accessible and as user-friendly as possible. 
 
 * [uiverse](https://uiverse.io/) UI elements.
 
+### Data Schema
+
+![data schema](docs/dataschema.jpg)
+
 - - -
 
 ## Testing
@@ -333,6 +338,7 @@ Clone the CryptoSwap repository:
 * [boryanakrasteva](https://uiverse.io/boryanakrasteva/tidy-falcon-17) - Delete note button.
 * [30secondsofcode](https://www.30secondsofcode.org/css/s/hover-underline-animation/) - Navbar links.
 * [AbanoubMagdy1](https://uiverse.io/AbanoubMagdy1/afraid-yak-99) - Add Title input.
+* [cockroachlabs](https://www.cockroachlabs.com/blog/database-schema-beginners-guide/) - Data Schema.
 * [Vincent Stevenson](https://www.youtube.com/watch?v=ZmEg2bLOf3s) - Help with Heroku deployment via sqlite.
 
 - - -
